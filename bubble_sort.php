@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lwq11
- * Date: 2019/5/22
- * Time: 20:45
- */
+
+// 冒泡排序
 function bublle_sort($arr){
     if (!is_array($arr)){
         die('please input array');
@@ -24,5 +20,5 @@ function bublle_sort($arr){
     return $arr;
 }
 
-$arr=[2,5,8,3];
+$arr=[1,43,54,62,21,66,32,78,36,76,39];
 var_dump(bublle_sort($arr));

@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lwq11
- * Date: 2019/5/22
- * Time: 20:11
- */
+
+// 快速排序
 function quick_sort($arr){
     if (!is_array($arr)){
         die('please input array');
