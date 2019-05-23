@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: Trevor
+ * Date: 2019/5/23
+ * Time: 10:24
+ */
 // 冒泡排序
 function bublle_sort($arr){
     if (!is_array($arr)){
@@ -8,12 +13,12 @@ function bublle_sort($arr){
     if (count($arr)<=1){
         return $arr;
     }
-    for ($i=0;$i<count($arr)-1;$i++){
-        for ($j=count($arr)-2;$j>$i;$j--){
-            if ($arr[$j]>$arr[$j+1]){
-                $tmp=$arr[$j];
-                $arr[$j]=$arr[$j+1];
-                $arr[$j+1]=$tmp;
+    for ($i=0;$i<count($arr);$i++){
+        for ($j=count($arr)-1;$j>$i;$j--){
+            if ($arr[$j-1]>$arr[$j]){
+                $tmp=$arr[$j-1];
+                $arr[$j-1]=$arr[$j];
+                $arr[$j]=$tmp;
             }
         }
     }
